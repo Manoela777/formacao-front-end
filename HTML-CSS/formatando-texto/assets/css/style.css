@@ -1,0 +1,85 @@
+p{
+    color:red;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* font-size: 16px;
+    font-size:1em;
+    font-size: 100%; */
+
+    font-size: 160%;
+    font-size: 1.6em;
+    font-size: 26px;
+
+    /* 16+160%=25,6 */
+
+    /* espaço entre linhas */
+    line-height: 2;
+
+    /* identação da primeiro texto */
+    text-indent: 60px;
+
+    /* decoração */
+    text-decoration: overline;
+    text-decoration: underline;
+    text-decoration: line-through;
+    text-decoration: none;
+
+    /* transformação do texto  */
+    text-transform: capitalize;
+    text-transform: lowercase;
+    text-transform: uppercase;
+   
+    /* espaço entre letras */
+    letter-spacing: -2px;
+
+    /* espaço entre palavras */
+    word-spacing: 6em;
+
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+h1{
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+
+    /* Alinhamento do texto */
+    text-align: center;
+    text-align: right;
+    text-align: justify;
+}
+
+.italico{
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family:minhaFonte ;
+    src: url('../fonts/PlaywriteNZ-VariableFont_wght.ttf');
+}
+
+h3{
+    font-family: 'minhaFonte',cursive;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family:minhaFonte1 ;
+    src: url('../fonts/BitcountPropDoubleInk-VariableFont_CRSV\,ELSH\,ELXP\,SZP1\,SZP2\,XPN1\,XPN2\,YPN1\,YPN2\,slnt\,wght.ttf');
+}
+
+.font1 {
+  font-family: "minhaFonte1", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,   
+}

@@ -1,0 +1,17 @@
+#rgb{
+    color: rgb(123,0,122);
+    background: rgb(0,0,0);
+}
+
+#hex{
+    background: #ccc;
+}
+
+#hsl{
+    color: hsl(111,100%,50%);
+}
+
+#escrita{
+    background: blue;
+    opacity: 0.5;
+}

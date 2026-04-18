@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box1{
+    position: fixed;
+    top: ;
+    left: ;
+    right: 0;
+    bottom: 0;
+    background-color: red;
+}
+
+main{
+    margin-top: 40px;
+}
