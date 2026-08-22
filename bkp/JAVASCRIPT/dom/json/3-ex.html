@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de pessoas</title>
+</head>
+<body>
+    <script>
+        let dados = `
+        [
+            {
+                "id":1,
+                "nome":"João",
+                "idade":38
+            },
+            {
+                "id":2,
+                "nome":"Maria",
+                "idade":29
+            },
+            {
+                "id":3,
+                "nome":"Romeu",
+                "idade":40
+            },
+            {
+                "id":4,
+                "nome":"Julieta",
+                "idade":42
+            }                                    
+        ]
+        `;
+
+        let pessoas = JSON.parse(dados);
+
+        console.log(pessoas[3].nome);
+
+        for(i = 0;i< pessoas.length; i++){
+            console.log(pessoas[i].id + " - " + pessoas[i].nome+ " - " + pessoas[i].idade);
+        }
+    </script>
+</body>
+</html>

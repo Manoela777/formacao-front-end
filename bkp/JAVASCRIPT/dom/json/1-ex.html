@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitura de JSON</title>
+</head>
+<body>
+    <script>
+        let dados = `
+            {
+            "nome":"Julieta",
+            "idade":"35",
+            "cidade":"São Paulo"
+            }
+        `;
+
+        //converte JSON para objeto
+
+        let pessoa = JSON.parse(dados);
+        console.log(pessoa);
+        console.log(pessoa.nome);
+        console.log(pessoa.idade);
+        console.log(pessoa.cidade);
+
+    </script>
+</body>
+</html>

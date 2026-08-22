@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função</title>
+</head>
+<body>
+    <script>
+        // Uma função é um bloco de código para executar uma tarefa
+        //específica.
+        
+        function saudacao(){
+            console.log("Olá, mundo!");
+            console.log("***********")
+        }
+
+        saudacao();
+        saudacao();
+        saudacao();
+
+        function calculoMedia(n1,n2, nome, curso, aprovado){
+            media = (n1+n2) / 2;
+            console.log(`Aluno: ${nome} Média: ${media} Curso: ${curso} Aprovado?: ${aprovado}`);
+        }
+
+        calculoMedia(7,9, 'Maria', 'Formação Front-End', true);
+        calculoMedia(7,5, 'João', 'Formação JavaScript', true);
+
+        /*nome = prompt("Digite o nome do aluno: ");
+        n1 = parseFloat(prompt('Digite a primeira nota: '));
+        n2 = parseFloat(prompt("Digite a segunda nota: "));
+
+        calculoMedia(n1, n2, nome)*/
+
+           //função com retorno
+   //nem toda função imprime informações
+   //algumas devolvem um resultado usando return
+
+   function somar (a,b){
+    calculo = a + b;
+    return calculo;
+   }
+
+   let resultado = somar(20,5);
+
+   console.log(resultado);
+
+    </script>
+</body>
+</html>

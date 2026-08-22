@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 32px auto;
+    padding: 0 16px;
+    color: #1a1a1a;
+    max-width: 560px;
+}
+
+h1{
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.campo{
+    margin-bottom: 18px;
+}
+
+label{
+    /* background: red; */
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+input, select{
+    width: 100%;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* erros */
+
+.erro{
+    border-color: #d33;
+}
+
+.valido{
+    border-color: #2a2;
+}
+
+.mensagem-erro{
+    display: block;
+    color: #d33;
+    font-size: 12px;
+    margin-top: 4px;
+    min-width: 14px;
+    /* testar pulo */
+}
+
+.checkbox-linha{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-linha input{
+    width: auto;
+}
+
+.checkbox-linha label{
+    margin: 0;
+}
+
+button{
+    background: #333;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:disabled{
+    background: #999;
+    cursor: not-allowed;
+}
+
+#resumo{
+    display: none;
+    background: #eef7ee;
+    border: 1px solid #2a2;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 20px;
+}
+
+#resumo h2{
+    margin-top: 0;
+    font-size: 16px;
+}

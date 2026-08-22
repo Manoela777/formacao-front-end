@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f2f2f2;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: deeppink;
+    transition: transform 0.6s ease-in-out;
+}
+
+.slide{
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide:nth-child(1){
+    background-image: url('https://th.bing.com/th/id/R.13cad1d7e05408e5881e94bbf2eba490?rik=rq35%2b0nnrXfXXg&riu=http%3a%2f%2f1.bp.blogspot.com%2f-Dy42UBkxXXc%2fU4P9llH1IWI%2fAAAAAAAAD-I%2fMT2evyWmGFw%2fs1600%2fimagens-imagens-paisagens-natureza-758ab5.jpg&ehk=aMOFfe5Gxh8ql7CG6bP47W0%2bpg0otCjSiZ%2f37kNuRmA%3d&risl=&pid=ImgRaw&r=0');
+}   
+.slide:nth-child(2){
+    background-image: url('https://static.todamateria.com.br/upload/pa/is/paisagem-natural-og.jpg');
+}
+.slide:nth-child(3){
+    background-image: url('https://wallpaperaccess.com/full/5742157.jpg');
+}
+.slide:nth-child(4){
+    background-image: url('https://static.significados.com.br/foto/paisagem-natural-og.jpg');
+}
+
+.seta{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 2;
+    transition: background-color 0.3;
+}
+
+.seta:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.anterior{
+    left: 15px;
+}
+
+.proximo{
+    right: 15px;
+}
+
+.indicadores{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    display: flex;
+    gap: 10px;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+
+.dot{
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    border: 2px solid #000;
+    transition: background-color 0.3s;
+}
+
+.ativo{
+    background-color: #fff;
+}

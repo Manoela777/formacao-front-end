@@ -1,0 +1,12 @@
+.destaque{
+    background: yellow;
+    font-weight: bold;
+}
+
+.escondido{
+    display: none;
+}
+
+.curtida{
+    background: red;
+}

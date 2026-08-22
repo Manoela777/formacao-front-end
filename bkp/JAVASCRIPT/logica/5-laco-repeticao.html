@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laço de Repetição</title>
+</head>
+<body>
+    <script>
+        console.log("Passo 7");
+        console.log("Passo 8");
+        console.log("Passo 9");
+        console.log("Passo 10");
+
+        //for (para)
+        //for (inicializacao, condicao, incremento){
+        // codigo a ser repetido}
+
+        for (let i = 1; i <= 10; i++)/*i = i +1*/{
+            console.log('passo'+i);
+        }
+
+        //fluxo de execucao
+        //cria i = i
+        //verifica se i <= 10
+        //executa o bloco
+        //incrementa 1 no i (i++)
+        //volta para a condição
+        //repete até a condição ser falsa
+
+        let numero = 5;
+
+        for(let i=0; i<=10; i++){
+            console.log(numero + "x" + i + "=" + (numero*i));
+            //console.log(`${numero} x ${i} = ${numero*1}`);
+        }
+
+        let soma = 0;
+        for(let i =1; i<=10;i++){
+            //soma = soma +i;
+            soma += i;
+            //console.log(soma); -> aqui eu veria todas as somas e não só o resultado final
+        }
+        console.log(soma);
+
+        let nomes = ['Diego', 'Jhenny','João', 'Maria'];
+        console.log(nomes.length);
+
+        for(let i = 0; i < 4; i++){
+            console.log(nomes[i]);
+        }
+
+        //while
+        console.log("-------------While------------");
+        let i = 0;
+        while (i<10){
+            console.log(i);
+            i++;
+        }
+
+        console.log("--------------for-------------");
+        for(let i = 0; i<10;i++){
+            console.log(i);
+        }
+
+        console.log("-----------do While-----------");
+        i = 0;
+        do{
+            console.log(i);
+            i++;
+        }while(i<=10)
+
+        console.log("-----------forEach-----------");
+
+        let numeros = [0,1,2,3,4,5,6,7,8,9,10];
+
+        numeros.forEach(function(numero){
+            console.log(numero);
+        });
+
+        console.log("-------------forEach²----------------");
+        numeros.forEach(numero =>{
+            console.log(numero);
+        });
+
+        console.log("---------------.split--------------");
+        let texto = "Olá mundo!";
+        texto.split('').forEach(function (numero) {
+            console.log(numero);
+        });
+
+        console.log("-------------Transformou em array (.split)----------------");
+        let palavra = texto.split(" ");
+        console.log(palavra);
+
+
+    </script>
+</body>

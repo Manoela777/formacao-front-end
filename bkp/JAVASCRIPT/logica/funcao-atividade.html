@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Função</title>
+</head>
+<body>
+    <script>
+        /*Pedir para o usuário o tipo de cálculo que ele quer fazer (+,-,*,/)*/
+        //pedir o primeiro numero
+        //pedir o segundo numero
+        //e mostrar o resultado
+        /*Criar função para soma, divisão, subtração e multiplicação*/
+    let tipo = prompt("Escolha o cálculo desejado (soma, subtração, multiplicação ou divisão): ");
+    let n1 = parseFloat(prompt("Escolha o primeiro número: "));
+    let n2 = parseFloat(prompt("Escolha o segundo número: "));
+
+   function soma (n1,n2){
+    calc = n1 + n2;
+    console.log("Resultado:" + calc);
+   }
+
+   function sub (n1,n2){
+    calc = n1-n2;
+    console.log("Resultado:" + calc);
+   }
+
+   function multi (n1,n2){
+   calc = n1*n2;
+   console.log("Resultado:" + calc);
+   }
+
+   function divi (n1,n2){
+    calc = n1/n2;
+    console.log("Resultado:" + calc);
+   }
+
+   if (tipo == 'soma'){
+    soma(n1,n2);
+   }else if (tipo == 'subtração'){
+    sub(n1,n2);
+   }else if (tipo == 'multiplicação'){
+    multi(n1,n2);
+   }else if(tipo == 'divisão'){
+    divi(n1,n2);
+   }else{
+    console.log("Cálculo não encontrado!");
+   }
+
+    </script>
+</body>
+</html>

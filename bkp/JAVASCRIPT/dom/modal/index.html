@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal </title>
+ 
+  <style>
+   
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+ 
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+ 
+    /* ===============================================
+       BOTÃO QUE ABRE O MODAL
+    =============================================== */
+    .btn-abrir {
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #4A90E2;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+ 
+    .btn-abrir:hover {
+      background-color: #357ABD;
+    }
+ 
+   
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+ 
+      display: none;
+      justify-content: center;
+      align-items: center;
+ 
+      z-index: 10;
+    }
+ 
+ 
+    .overlay.ativo {
+      display: flex;
+    }
+ 
+   
+    .modal {
+      background-color: #fff;
+      width: 90%;
+      max-width: 420px;
+      border-radius: 12px;
+      padding: 24px;
+      position: relative;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+ 
+    .modal h2 {
+      margin-bottom: 12px;
+      color: #333;
+    }
+ 
+    .modal p {
+      color: #555;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+ 
+    .btn-fechar {
+      position: absolute;
+      top: 12px;
+      right: 16px;
+      background: none;
+      border: none;
+      font-size: 22px;
+      line-height: 1;
+      cursor: pointer;
+      color: #888;
+    }
+ 
+    .btn-fechar:hover {
+      color: #000;
+    }
+ 
+    .btn-confirmar {
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #4A90E2;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+ 
+    .btn-confirmar:hover {
+      background-color: #357ABD;
+    }
+  </style>
+</head>
+<body>
+ 
+ 
+  <button class="btn-abrir" id="btnAbrirModal">
+    Abrir modal
+  </button>
+ 
+ 
+  <div class="overlay" id="overlay">
+ 
+    <div class="modal">
+ 
+ 
+      <button class="btn-fechar" id="btnFecharModal">
+        &times;
+      </button>
+ 
+      <h2>Título do modal</h2>
+ 
+      <p>
+        Esse é um modal simples feito só com HTML, CSS e
+        JavaScript puro, sem nenhuma biblioteca externa.
+        Use como exemplo para entender a lógica de
+        mostrar/esconder elementos na tela.
+      </p>
+ 
+      <button class="btn-confirmar" id="btnConfirmar">
+        Entendi
+      </button>
+ 
+    </div>
+ 
+  </div>
+ 
+ <script src="assets/js/script.js"></script>
+
+</body>
+</html>

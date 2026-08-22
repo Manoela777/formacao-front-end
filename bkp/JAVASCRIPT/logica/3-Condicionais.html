@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicionais</title>
+
+</head>
+
+<body>
+
+    <script>
+        /*let idade = parseInt(prompt("Digite a sua idade: "));
+        let cnh = prompt("Você possui CNH? Digite SIM ou NÃO");
+
+        if (idade >= 18 && cnh == "SIM") {
+            console.log("Você pode dirigir");
+        } else {
+            console.log("Você não pode dirigir!");
+        }
+
+        console.log('---fim---');
+
+        if (idade >= 18) {
+            if (cnh == true) {
+                console.log("Você é maior de idade e tem CNH");
+            } else {
+                console.log("Você é maior de idade, mas não tem CNH. Logo, não pode dirigir");
+            }
+        } else {
+            console.log("Você não pode dirigir já que é menor de idade");
+        }
+
+        let nota = 10;
+        if (nota >= 7) {
+            console.log("Aprovado");
+        } else {
+            console.log("Reprovado");
+        }*/
+
+        //switch - case
+        /*var fruta = 'morango';
+        switch (fruta) {
+            case 'morango':
+                console.log("Morango!");
+                break;
+            case 'mamão':
+                console.log("Mamão!");
+                break;
+            default:
+                console.log("Fruta não encontrada!");
+                break;
+        }*/
+
+        dia = new Date().getDay();
+        console.log(dia);
+
+        switch(dia){
+            case 0:
+                console.log('domingo');
+                break;
+            case 1:
+                console.log('segunda');
+                break;
+            case 2:
+                console.log('terça');
+                break;
+            case 3:
+                console.log('quarta');
+                break;
+            case 4:
+                console.log('quinta');
+                break;
+            case 5:
+                console.log('sexta');
+                break;
+            case 6:
+                console.log('sábado');
+                break;
+            default:
+                console.log("dia não encontrado!");
+        }
+
+    </script>
+
+</body>
+
+</html>

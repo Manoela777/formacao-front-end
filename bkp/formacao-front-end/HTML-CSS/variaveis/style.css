@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    color:#333;
+}
+
+header{
+    background: var(--cor-principal);
+    /* background: url() / #777; */
+    /* background-color: #777;
+    background-image: url(); */
+
+    color: white;
+    padding: var(--espacamento);
+    text-align: center;
+}
+
+
+
+.cards{
+    display: flex;
+    gap:var(--espacamento);
+    padding: var(--espacamento);
+}
+
+.card{
+    flex: 1;
+    background: #f4f4f4;
+    padding: var(--espacamento);
+    border-radius:12px;
+}

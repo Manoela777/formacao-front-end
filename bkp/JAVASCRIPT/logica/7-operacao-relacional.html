@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operação Relacional</title>
+</head>
+<body>
+    <script>
+        //operadores relacionais
+        //esses operadores são usados para comparar dois valores e retornar um valor
+        //lógico (true/false)
+
+        let num1 = 35;
+        let num2 = 5;
+        
+        // igual a (==): verifica se dois valores são iguais; apenas um igual (=) é apenas atribuição
+
+        let igualdade = num1 == num2;
+        console.log(igualdade);
+
+        console.log(5 == '5'); //javascript converte string em numeral
+        console.log(true==1);
+        console.log(null == undefined);
+        console.log(0==false);
+console.log("------------------------------------------");
+        // igual a (===): verifica se dois valores são iguais E do mesmo tipo
+        let igualdadeValorTipo = num1 === num2;
+        console.log(igualdadeValorTipo);
+        console.log(5==="5");
+        console.log(true === 1);
+        console.log(null===undefined);
+
+        //diferente de (!=): verifica se dois valores são diferentes
+        console.log("---------------diferente de (!=)-----------");
+        console.log(5!= "5");
+        console.log(true != 1);
+
+        //diferente de (!==): verifica se dois valores são diferentes E do mesmo tipo
+        console.log("-----------!==-----------");
+        console.log(5!=="5");
+        console.log(true !== 1);
+
+        //Maior que (>)
+        console.log("----------- Maior que -------------")
+        console.log(20>10);
+        //Menor que (<)
+        console.log("----------- Menor que -------------")
+        console.log(20<10);
+
+        //maior ou igual que (>=)
+        console.log("----------- Maior ou igual que -------------")
+        console.log(20>=10);
+        console.log(10>=10);
+        console.log(9>=10);
+
+        //menor ou igual que (<=)
+        console.log("----------- Menor ou igual que -------------")
+        console.log(20<=10);
+        console.log(10<=10);
+        console.log(9<=10);
+
+    </script>
+</body>
+</html>

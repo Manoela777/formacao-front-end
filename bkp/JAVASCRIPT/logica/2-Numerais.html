@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numerais</title>
+
+</head>
+
+<body>
+
+    <script>
+
+       let num1 = 5;
+       let num2 = 3;
+       let subtracao = num1 - num2;
+       console.log("A subtração é: " + subtracao);
+       //console.log("A subtração é: " + (num1-num2));
+
+       let idade = "35";
+       console.log(idade + 2);
+       //parseInt - transforma string numérica em números inteiros
+       let idadeNumero = parseInt(idade);
+       console.log(typeof idadeNumero);
+       console.log(idadeNumero);
+
+       let idadeNumeroFlutuante = parseFloat(idade);
+       console.log(idadeNumeroFlutuante.toFixed(2));
+
+       let numero1 = parseInt(prompt("Digite o primeiro número: "));
+       let numero2 = parseInt(prompt("Digite o segundo número: "));
+       console.log(numero1 + numero2);
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array e Matrizes</title>
+</head>
+<body>
+    <script>
+        //Um array é uma estrutura de dados que permite armazenar múltiplos valores em uma única variável
+        //em javascript, arrays são objetos especiais que armazenam elementos de forma indexa, começando pelo índice 0;
+
+        let frutas = ['maçã', 'banana', 'uva', 'laranja'];
+        console.log(frutas);
+        console.log(frutas[2]);
+
+        let nomes = new Array("Maria", "João", "Romeu", "Julieta");
+        console.log(nomes);
+        console.log(nomes[3]);
+
+        //os arrays podem conter diferentes tipos de dados
+
+        let misto = [1, 'texto', true, {nome: 'Mauro'}, [2,5,6]];
+        console.log(misto[0]);
+        console.log(misto[1]);
+        console.log(misto[2]);
+        console.log(misto[3]);
+        console.log(misto[4]);
+        console.log(misto);
+        console.log('---------')
+        console.log(misto[3]['nome']);
+        console.log('---------')
+        console.log(misto[4][1]);
+
+        //tamanho de um array (lenght)
+        numeros = [25,3,6,8,100,0];
+        console.log(numeros);
+        console.log(numeros.length);
+
+        //percorrer array
+        for (let i=0; i < numeros.length; i++){
+            console.log(numeros[i]);
+        }
+
+        //uma matriz é um array dentro de um array, permitindo armazenar dados em múltiplas dimensões,
+        // No javascript uma matriz pode ser representada como um array de arrays
+        console.log('-----------------')
+        let pessoas = [
+            ['Fábio', 'Paula'],[42,25]
+        ]
+        console.log(pessoas);
+        console.log(pessoas[0][1]);
+
+        console.log('----------------')
+
+        let matriz = [
+            //0 1 2 3
+            [1,2,3,4],//0
+            [5,6,7,8],//1
+            [9,10,11,12],//2
+            [13,14,15,16]//3
+        ];
+
+        console.log(matriz[0][0]);
+        console.log(matriz[3][1]);
+
+        console.log('----------------')
+
+        for (let linha = 0; linha < matriz.length; linha++){
+            console.log(linha);
+
+            for(let coluna = 0; coluna < matriz[linha].length;coluna++){
+                console.log(`Elemento [${linha}][${coluna} = ${matriz[linha][coluna]}`)
+            }
+        }
+
+        //Object - algo real (pessoa tem nome, idade, altura...depois posso alterar como a idade) ou abstrato (conta no banco, dinheiro)
+
+        let pessoa = {
+            nome: "Maria", //chave: "valor"
+            idade: "30"
+        }
+
+        console.log(pessoa['nome']); //aqui aparecerá o valor da chave
+
+        pessoas = [
+            {nome: 'Maria', idade: 36},
+            {nome:'João', idade: 52},
+            {nome:'Romeu', idade: 12},
+            {nome:'Julieta', idade: 45}
+        ];
+
+        console.log(pessoas[2].nome, pessoas[2].idade);
+
+        const biblioteca = {
+            nome: 'Biblioteca tito',
+            localizacao: 'São Paulo',
+            livros: [
+                {
+                    titulo: 'Dom Casmurro',
+                    autor: 'Machado de Assis',
+                    genero: ['Ficção', 'Drama']},
+                {
+                    titulo: 'O Alquimista',
+                    autor: 'Paulo Coelho',
+                    genero: ['Auto-Ajuda', 'Drama']},
+                {
+                    titulo: 'Capitães de Areia',
+                    autor: 'Jorge Amado',genero: ['Drama', 'Crítica Social']}
+            ]
+        }
+
+        console.log(biblioteca.nome);
+        console.log(biblioteca.livros[1].titulo);
+        //console.log(`Nome da biblioteca: ${biblioteca.nome} Nome do livro: ${biblioteca.livros[1].titulo}`)
+        console.log(biblioteca.livros[1].genero[0]);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora mundo</title>
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="assets/lib/fontawesome-free/css/all.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"> -->
+
+    <!-- Style custom -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">Explora <span>mundo</span> </div>
+
+        <nav class="nav-container">
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#destination">Destinos</a></li>
+                <li><a href="index.html#faq">Ajuda</a></li>
+            </ul>
+
+            <div class="nav-auth">
+                <a href="" class="btn-primary">Entrar</a>
+                <a href="" class="btn-primary">Cadastre-se</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="details-main">
+        <section class="details">
+            <!-- Container das imagens (o JS vai inserir as tags <img> aqui) -->
+            <div class="gallery" id="galeria-fotos">
+                <!-- Imagens estáticas comentadas:
+                <img src="assets/image/destino1.jpg" alt="" class="img-gallery">
+                <img src="assets/image/destino2.jpg" alt="">
+                <img src="assets/image/destino3.jpg" alt="">
+                -->
+            </div>
+
+            <ul id="destinos">
+
+            <div class="info-details">
+                <!-- Adicionados IDs para o JS trocar o texto -->
+                <h1 id="destino-nome">Carregando destino...</h1>
+                <p id="destino-descricao"></p>
+            </div>
+
+            <div class="info-details">
+                <h2>O que está incluso</h2>
+                <!-- Container dos itens inclusos (o JS preenche com base no true/false) -->
+                <div class="include-grid" id="incluso-grid">
+                    <!-- Itens estáticos comentados:
+                    <p class="include-item"><i class="fas fa-plane"></i> Passagens aéreas ida/volta</p>
+                    ...
+                    -->
+                </div>
+            </div>
+
+            <div class="info-details">
+                <h2>Itinerário da viagem</h2>
+                <!-- Container dos passos do itinerário (o JS faz um forEach aqui) -->
+                <div id="itinerario-container">
+                    <!-- Passos estáticos comentados:
+                    <div class="itinerary-step">
+                        <p class="step-number">1</p>
+                        <div>
+                            <h3>Chegada e Recepção</h3>
+                            <p>Chegada no aeroporto, transfer para o hotel e jantar de boas-vindas</p>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+            </ul>
+        </section>
+        <aside class="details-aside">
+            <p>A partir de: </p>
+            <!-- Adicionado ID para o preço -->
+            <h2 id="destino-preco">R$ 0,00</h2>
+            <div class="details-form">
+                <form action="">
+                    <label for="">Viajantes</label>
+                    <select name="" id="">
+                        <option value="">1 Adulto</option>
+                        <option value="">2 Adultos</option>
+                        <option value="">Família (2 Adultos + 2 Crianças)</option>
+                    </select>
+
+                    <input class="btn-primary" type="submit" value="RESERVAR AGORA">
+                </form>
+
+                <p><i class="fas fa-lock"></i>Pagamento seguro e cancelamento grátis</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3>ExploraMundo</h3>
+            <p>Sua agência de viagens</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://instagram.com" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- ADICIONADO: Importação do arquivo JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

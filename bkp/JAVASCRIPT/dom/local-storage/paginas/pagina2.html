@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2</title>
+</head>
+<body>
+    <p id="resultado"></p>
+    <a href="pagina1.html">Voltar</a>
+
+    <button id="sair">Sair</button>
+
+    <script>
+        const resultado = document.getElementById('resultado');
+        const nome = localStorage.getItem('nomeUsuario');
+        const btnSair = document.getElementById('sair');
+
+        console.log(nome);
+
+        if(nome){
+            resultado.innerText = `Bem-vindo ${nome}`;
+        }else{
+            resultado.innerText = 'Nenhum usuário cadastrado, volte para cadastrar';
+        }
+
+        btnSair.addEventListener('click',()=>{
+            localStorage.removeItem('nomeUsuario');
+
+            window.location.href = 'pagina1.html';
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datas</title>
+</head>
+<body>
+    <script>
+        //objeto Date()
+        //O objeto Date é usado para representar datas e horários.
+        //Ele permite criar, manipular e formatar datas.
+        
+        diaAtual = new Date();
+        console.log(diaAtual);
+
+        //(ano, mês,dia, hora, minuto e segundo)
+        dataEspecifica = new Date(2023,9,15,14,30,0);
+        console.log(dataEspecifica);
+
+        //d = 14+3;
+
+        dataString = new Date(`2023-10-15T14:30:00`);
+        console.log(dataString);
+
+        dataString2 = new Date(`2023-10-15T14:30:00Z`);
+        console.log(dataString2);
+
+        dataString3 = new Date(`2023-10-15T14:30:00Z`);
+        console.log(dataString3.getHours());
+        console.log(dataString3.getUTCHours());
+
+        //Metodos úteis do Date()
+        console.log('---------------');
+        console.log(diaAtual.getFullYear());
+        console.log(diaAtual.getMonth()+1);//retorna o mês (0-11) onde 0 é janeiro
+
+        let meses = [
+            "Janeiro",
+            "Fevereiro",
+            "Março",
+            "Abril",
+            "Maio",
+            "Junho",
+            "Julho",
+            "Agosto",
+            "Setembro",
+            "Outubro",
+            "Novembro",
+            "Outubro",
+            "Dezembro"
+        ]
+        console.log(meses[diaAtual.getMonth()]);
+
+        let dataTexto = diaAtual.toLocaleDateString('pt-br',{
+            month:'long' // mostrar junho ->  month:'long'|  month:'numeric' -> mostrar numeral |  month:'2-digit' -> mostrar numeral com 2 digitos, 0 a esquerda |  month:'short' -> forma abreviada (jun) |  month:'narrow' -> a menor versão possível, geralmente a primeira letra
+        });
+        console.log(dataTexto);
+
+        dataTexto = dataTexto.charAt(0).toUpperCase() + dataTexto.slice(1);
+        console.log(dataTexto);
+
+        console.log(diaAtual.getDay());//retorna o dia da semana (0-6)
+        console.log(diaAtual.getDate());//retorna o dia do mês (1-31)
+        console.log(diaAtual.getHours());// retorna a hora(0-23)
+        console.log(diaAtual.getMinutes());//retorna os minutos (0-59)
+        console.log(diaAtual.getSeconds());//retorna os segundos (0-59)
+        console.log(diaAtual.getMilliseconds()); //retorna os milissegundos (0-999)
+
+        console.log(diaAtual.getTime()); //retorna o timestamp (milissegundos desde 1° de janeiro de 1979)
+
+        //Timestamp
+        //obter o timestamp 
+        console.log(diaAtual.getTime());
+        console.log(Date.now());//retorna o timestamp atual
+
+        //convertendo timestamp para data
+        let timestamp = Date.now();
+        let data = new Date(timestamp);
+
+        console.log(data);
+
+        //formatação de datas 
+        //no javascript não temos uma função nativa para formatar datas de maneira
+        //amigável (13/06/2026)
+        //mas você pode usar métodos do objeto Date() para criar seu próprio formato
+
+        let dataAtual = new Date();
+        let dia = dataAtual.getDate();
+        let mes = dataAtual.getMonth() +1;
+        let ano = dataAtual.getFullYear();
+
+        let dataFormatada = `${dia}/${mes}/${ano}`;
+        console.log(dataFormatada);
+
+        //diferença entre datas 
+        //voce pode calcular a diferença entre duas datas subtraindo seus timestamp
+
+        let data1 = new Date (2026,5,10);
+        let data2 = new Date (2026,5,13);
+        
+        let diferenca = data2 - data1;
+        console.log(diferenca);
+        
+        let dias = diferenca / (1000 * 60 * 60 * 24); //converte para dias
+        console.log(dias);
+
+        //fusos
+        //o objeto Date() trabalha com o fuso horário local do sistema.
+        //para trabalhar com fusos horários específicos, você pode usar bibliotecas como Luxon
+
+        date = new Date();
+        formatador = new Int1.DateTimeFormat('pt-br',{
+            timeZone: 'America/Sao_Paulo',
+            hour: '2-digit',
+            minute: '2-digit',
+            second:'2-digit'
+        });
+
+        console.log(formatador.format(date)); //exibe a hora no fuso horário de são paulo
+
+    </script>
+</body>
+</html>

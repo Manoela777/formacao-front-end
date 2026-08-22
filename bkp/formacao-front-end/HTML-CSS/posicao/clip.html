@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position clip</title>
+    <style>
+        .box1{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            clip: rect(0 100px 100px 0);
+            /* clip: rect(top right bottom left); */
+            
+        }
+        .box2{
+            background-color: rgb(0, 255, 60);
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="box1">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <div class="box2">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+
+</html>

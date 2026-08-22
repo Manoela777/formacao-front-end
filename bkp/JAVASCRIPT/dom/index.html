@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 id="titulo">Aqui vai um texto dinâmico com JS</h1>
+    <p>DOM significa Document Object Model
+    (Modelo de Objeto do Documento)</p>
+    <p>Quando o navegador abre uma página HTML, 
+    ele transforma todos os elementos em uma
+    árvore de objetos que o javascript consegue acessar.
+    </p>
+    
+    <!-- Documento
+    |
+    -----html
+            |
+            head
+                |
+                title
+            |
+            body
+                |
+                ---h1
+                ---p
+                ---p -->
+
+    <button onclick="mensagem()">Clique Aqui!</button>
+
+    <input type="text" placeholder="num1" id="num1">
+    <input type="text" placeholder="num2" id="num2">
+
+    <button onclick="soma()">Soma</button>
+
+    <p id="resultado"></p>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>

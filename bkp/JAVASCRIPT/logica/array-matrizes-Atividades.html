@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array e Matrizes</title>
+</head>
+<body>
+    <script>
+        // usuário digita quantos indice ele quer no array
+        //após digitar a quantidade de indíces, o programa pede para informar o valor de cada indíce
+
+        let indice = parseInt(prompt("Digite quantos índices você quer no array: "));
+        let valores = [];
+        for (let i = 0; i < indice; i++) {
+            valores[i] = prompt(`Digite o valor para o índice ${i}: `);
+        }
+        console.log(valores);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: aqua;
+        }
+
+        h1 {
+            width: 100px;
+            height: 100px;
+            /* background-color: blueviolet; */
+            position: relative;
+            animation: animacao 5s infinite;
+            color: red;
+        }
+
+        @keyframes animacao {
+            0% {
+                color: blue;
+                /* transform: rotate(800deg); */
+                transform: rotate(40deg);
+                transform-origin: left top;
+            }
+
+            50% {
+                color: pink;
+                transform: rotate(60deg);
+                transform-origin: right top;
+            }
+
+            100% {
+                color: green;
+                transform: rotate(360deg);
+                transform-origin: left top;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Diego</h1>
+</body>
+
+</html>

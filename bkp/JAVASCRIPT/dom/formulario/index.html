@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    <form id="form-cadastro">
+        <div class="campo">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome">
+            <span class="mensagem-erro" id="erro-nome"></span>
+        </div>
+
+        <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email">
+            <span class="mensagem-erro" id="erro-email"></span>
+        </div>
+
+        <div class="campo">
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha">
+            <span class="mensagem-erro" id="erro-senha"></span>
+        </div>
+
+        <div class="campo">
+            <label for="confirmarSenha">Confirmar senha</label>
+            <input type="password" id="confirmarSenha" name="confirmarSenha">
+            <span class="mensagem-erro" id="erro-confirmarSenha"></span>
+        </div>
+
+        <div class="campo">
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" name="idade">
+            <span class="mensagem-erro" id="erro-idade"></span>
+        </div>
+
+        <div class="campo">
+            <label for="pais">País</label>
+            <select name="pais" id="pais"></select>
+            <!-- opções serão criadas dinamicamente via JS -->
+        </div>
+
+        <div class="campo checkbox-linha">
+            <input type="checkbox" id="termos" name="termos">
+            <label for="">Aceito todos os termos de uso</label>
+        </div>
+        <span class="mensagem-erro" id="erro-termos"></span>
+
+        <button type="submit">Cadastro</button>
+    </form>
+
+    <div id="resumo">
+        <h2>Cadastro realizado com sucesso!</h2>
+        <pre id="resumo-conteudo"></pre>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>

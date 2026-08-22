@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela semantica</title>
+    <style>
+        #medalhas {
+            border-collapse: collapse;
+        }
+
+        #medalhas th, #medalhas tfoot td {
+            background: #000;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #medalhas td {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+
+
+        }
+
+       
+
+        caption {
+            border: 1px solid #000;
+            background: #be3d3d;
+        }
+
+
+        /* #medalhas tbody tr:nth-child(odd){
+            background: #e3aa93;
+        } */
+
+        /* #medalhas tbody tr:nth-child(even){
+            background: #98e283;
+        } */
+
+        #coluna1, #coluna3{
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    11-tabela-colspan.html
+
+    <table id="medalhas">
+        <caption>Medalhas</caption>
+        <colgroup>
+            <col id="coluna1">
+            <col>
+            <col id="coluna3">
+            <col>
+            <col>            
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Pais</th>
+                <th>Ouro</th>
+                <th>Prata</th>
+                <th>Bronze</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td>Pais</td>
+                <td>Ouro</td>
+                <td>Prata</td>
+                <td>Bronze</td>
+                <td>Total</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Brasil</td>
+                <td>5</td>
+                <td>2</td>
+                <td>4</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Brasil</td>
+                <td>5</td>
+                <td>2</td>
+                <td>4</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Brasil</td>
+                <td>5</td>
+                <td>2</td>
+                <td>4</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Brasil</td>
+                <td>5</td>
+                <td>2</td>
+                <td>4</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Brasil</td>
+                <td>5</td>
+                <td>2</td>
+                <td>4</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>

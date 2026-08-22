@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    img{
+        width: 300px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    button{
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    h2{
+        margin: 10px 0;
+        margin: auto;
+    }
+
+</style>
+
+<body>
+    <h1>Produtos</h1>
+    <h2 id="titulo">Produto 1</h2>
+    <img id="imagem" src="assets/img/cachorro.jpg" alt="">
+    <p id="descricao">Aqui vai uma descrição</p>
+    <button id="botao">Próxima imagem</button>
+
+    <script>
+        const titulo = document.querySelector("#titulo");
+        const imagem = document.querySelector("#imagem");
+        const descricao = document.querySelector("#descricao");
+        const botao = document.querySelector("#botao");
+
+        const produtos = [
+            {
+                src: 'assets/img/cachorro.jpg',
+                alt: 'Produto 1',
+                titulo: 'Produto 1',
+                descricao: 'Aqui vai uma descrição dos produtos'
+            },
+            {
+                src: 'assets/img/cachorro.jpg',
+                alt: 'Produto 2',
+                titulo: 'Produto 2',
+                descricao: 'Aqui vai uma descrição dos produtos'
+            },
+            {
+                src: 'assets/img/cachorro.jpg',
+                alt: 'Produto 2',
+                titulo: 'Produto 2',
+                descricao: 'Aqui vai uma descrição dos produtos'
+            },
+            {
+                src: 'assets/img/cachorro.jpg',
+                alt: 'Produto 3',
+                titulo: 'Produto 3',
+                descricao: 'Aqui vai uma descrição dos produtos'
+            },
+            {
+                src: 'assets/img/cachorro.jpg',
+                alt: 'Produto 4',
+                titulo: 'Produto 4',
+                descricao: 'Aqui vai uma descrição dos produtos'
+            }
+        ]
+
+        //lista com as imagens
+        const imagens = [
+            'assets/img/cachorro.jpg',
+            'assets/img/gato.jpg'
+        ];
+
+        const alts = [
+            'cachorro',
+            'gato'
+        ];
+
+        let indice = 0;
+        botao.addEventListener('click', () => {
+            //console.log(imagens[1]);
+            console.log(indice);
+            indice ++; //indice = indice + 1;
+
+            //se chegar até o final, volte para o primeiro
+            console.log(imagens.length);
+
+            if(indice >= imagens.length){
+                indice = 0
+            }
+
+            imagem.src = imagens[indice];
+            imagem.alt = alts[indice];
+            imagem.textContent = produtos[indice].titulo;
+            descricao.textContent = produtos[indice].descricao;
+        });
+    </script>
+</body>
+</html>

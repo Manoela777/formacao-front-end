@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitura de JSON</title>
+</head>
+<body>
+
+    <div id="resultado"></div>
+
+
+
+    <script>
+        let dados = `
+            {
+            "nome":"Julieta",
+            "idade":"35",
+            "cidade":"São Paulo"
+            }
+        `;
+
+        //converte JSON para objeto
+
+        let pessoa = JSON.parse(dados);
+
+        document.getElementById('resultado').innerHTML = 
+        `
+        <p><strong>Nome: </strong>${pessoa.nome}</p>
+        <p><strong>Idade: </strong>${pessoa.idade}</p>
+        <p><strong>Cidade: </strong>${pessoa.cidade}</p>
+        `;
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis</title>
+
+</head>
+
+<body>
+
+    <script>
+
+        var nome_sobrenome = "Manoela Olim";
+
+        var nome = "Manoela";
+        //alert(nome);
+        console.log(nome);
+
+        var idade = 20;
+        var salario = 1500.50;
+        var moto = prompt("Digite o nome de uma moto: ");
+        console.log(moto);
+
+        var verdadeiro = true;
+        var falso = false;
+        console.log(typeof verdadeiro);
+
+        var nome1 = "João";
+        console.log(nome1);
+        var nome1 = "Maria";
+        console.log(nome1);
+
+        //let - Variáveis declaradas como let tem escopo de bloco e podem ser atualizadas, mas não podem ser declaradas novamente.
+        //Foram criadas posteriormente ao var para evitar erros.
+        let nome2 = "Romeu";
+        console.log(nome2);
+        nome2 = "Julieta";
+
+        // const - constantes (O valor não pode ser alterado)
+        const variavel_const = 5;
+        console.log(variavel_const);
+        //variavel_const = 6;
+        //console.log(variavel_const);
+
+        // Undefined - variavel declarada, mas não atribuída a um valor
+        let endereco;
+        console.log(endereco);
+
+        //Null - Ausência intencional de valores
+        let telefone = null;
+        console.log(telefone);
+
+        // Concatenar
+        let nome3 = "Manoela";
+        let sobrenome3 = "Olim";
+        let resultado = nome3 + " " + sobrenome3 + ", seja bem-vindo!";
+        console.log(resultado);
+        //console.log(nome3 + " " + sobrenome3);
+
+        let resultado2 = `${nome3} ${sobrenome3}, seja bem-vindo!`;
+        console.log(resultado2);
+
+    </script>
+
+</body>
+
+</html>

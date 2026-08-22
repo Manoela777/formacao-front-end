@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "nome": "Fernando de Noronha",
+    "descricao": "Noronha é um santuário ecológico com praias mais bonitas do Brasil. Ideal para mergulho e contato com a natureza.",
+    "preco": 3200.00,
+    "imagens": [
+      "assets/image/destino1.jpg",
+      "assets/image/destino2.jpg",
+      "assets/image/destino3.jpg"
+    ],
+    "incluso": {
+      "passagens": true,
+      "hotel_5_estrelas": true,
+      "cafe_manha": true,
+      "transfer": true
+    },
+    "itinerario": [
+      {
+        "passo": 1,
+        "titulo": "Chegada e Recepção",
+        "descricao": "Chegada no aeroporto, transfer para o hotel e jantar de boas-vindas."
+      },
+      {
+        "passo": 2,
+        "titulo": "Tour Histórico e Praias",
+        "descricao": "Visita aos principais pontos turísticos com guia especializado."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nome": "Gramado e Canela",
+    "descricao": "Charmosa cidade na Serra Gaúcha, famosa pela arquitetura em estilo europeu, gastronomia requintada e parques temáticos.",
+    "preco": 1850.00,
+    "imagens": [
+      "assets/image/destino2.jpg",
+      "assets/image/destino1.jpg",
+      "assets/image/destino3.jpg"
+    ],
+    "incluso": {
+      "passagens": true,
+      "hotel_5_estrelas": false,
+      "cafe_manha": true,
+      "transfer": false
+    },
+    "itinerario": [
+      {
+        "passo": 1,
+        "titulo": "Chegada à Serra Gaúcha",
+        "descricao": "Check-in na pousada colonial e passeio pelo centro histórico na Rua Coberta."
+      },
+      {
+        "passo": 2,
+        "titulo": "Tour do Chocolate e Cascata do Caracol",
+        "descricao": "Visita às fábricas artesanais de chocolate em Gramado e mirante do Caracol em Canela."
+      },
+      {
+        "passo": 3,
+        "titulo": "Passeio de Maria Fumaça",
+        "descricao": "Viagem de trem temático pelas cidades vizinhas com degustação de vinhos e queijos."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "nome": "Salvador e Chapada Diamantina",
+    "descricao": "Uma combinação única entre a rica herança cultural afro-brasileira de Salvador e as trilhas e cachoeiras da Chapada.",
+    "preco": 2490.00,
+    "imagens": [
+      "assets/image/destino3.jpg",
+      "assets/image/destino2.jpg",
+      "assets/image/destino1.jpg"
+    ],
+    "incluso": {
+      "passagens": true,
+      "hotel_5_estrelas": false,
+      "cafe_manha": true,
+      "transfer": true
+    },
+    "itinerario": [
+      {
+        "passo": 1,
+        "titulo": "Pelourinho e Farol da Barra",
+        "descricao": "Visita guiada pelo centro histórico de Salvador e pôr do sol no Farol da Barra."
+      },
+      {
+        "passo": 2,
+        "titulo": "Subida para a Chapada Diamantina",
+        "descricao": "Deslocamento até Lençóis e trilha leve até as piscinas naturais do Serrano."
+      },
+      {
+        "passo": 3,
+        "titulo": "Cachoeira da Fumaça",
+        "descricao": "Caminhada até o topo de uma das maiores quedas d'água do país."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "nome": "Bonito - MS",
+    "descricao": "O principal polo do ecoturismo no Brasil, com rios de águas cristalinas, grutas subterrâneas e rica fauna aquática.",
+    "preco": 2980.00,
+    "imagens": [
+      "assets/image/destino1.jpg",
+      "assets/image/destino3.jpg",
+      "assets/image/destino2.jpg"
+    ],
+    "incluso": {
+      "passagens": false,
+      "hotel_5_estrelas": true,
+      "cafe_manha": true,
+      "transfer": true
+    },
+    "itinerario": [
+      {
+        "passo": 1,
+        "titulo": "Flutuação no Rio da Prata",
+        "descricao": "Mergulho em águas transparentes cercado por cardumes de peixes nativos."
+      },
+      {
+        "passo": 2,
+        "titulo": "Gruta do Lago Azul",
+        "descricao": "Exploração do monumento natural com formações geológicas e águas azuladas."
+      }
+    ]
+  }
+]
